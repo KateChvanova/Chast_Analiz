@@ -12,7 +12,7 @@ namespace CHASTANAL
         {
             List<char> text = new List<char>();
 
-            Console.WriteLine("Ведите текст для чистотного анализа: ");
+            Console.WriteLine("Ведите текст для частотного анализа: ");
             string input = Console.ReadLine();
             text.AddRange(input);
 
