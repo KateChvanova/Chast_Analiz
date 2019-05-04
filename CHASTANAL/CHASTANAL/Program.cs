@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CHASTANAL
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -75,7 +75,7 @@ namespace CHASTANAL
             Console.ReadLine();
         }
 
-        static bool IsRussianBukva(char bukva)
+       public static bool IsRussianBukva(char bukva)
         {
             char[] rus = new char[] { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й',
                 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я' };
@@ -85,9 +85,9 @@ namespace CHASTANAL
             }
             return false;
         }
-        static double Chastota(int allBukvs, int bukva)
+      public  static double Chastota(int allBukvs, int bukva)
         {
-            return (double)bukva / (double)allBukvs * 100.0;
+            return Math.Round(((double)bukva / (double)allBukvs * 100.0),2);
         }
     }
 }
